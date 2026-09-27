@@ -1,0 +1,580 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #f4f8fb;
+color: #222;
+line-height: 1.6;
+}
+
+/* =========================
+MENU
+========================= */
+
+nav {
+background: #0b3d5c;
+color: white;
+padding: 20px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+font-size: 24px;
+font-weight: bold;
+}
+
+.nav-links {
+display: flex;
+gap: 25px;
+}
+
+.nav-links a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+.nav-links a:hover {
+color: #8ed1fc;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero {
+min-height: 550px;
+background: linear-gradient(135deg, #0b3d5c, #1593c5);
+color: white;
+display: flex;
+align-items: center;
+padding: 80px 8%;
+}
+
+.hero-content {
+max-width: 700px;
+}
+
+.hero-small {
+font-size: 15px;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+.hero h1 {
+font-size: 60px;
+line-height: 1.1;
+margin-bottom: 25px;
+}
+
+.hero p {
+font-size: 18px;
+margin-bottom: 30px;
+}
+
+/* =========================
+PRZYCISK
+========================= */
+
+.btn {
+display: inline-block;
+background: white;
+color: #0b3d5c;
+padding: 15px 25px;
+border-radius: 10px;
+text-decoration: none;
+font-weight: bold;
+}
+
+.btn:hover {
+background: #e8f6fc;
+}
+
+/* =========================
+SEKCJE
+========================= */
+
+section {
+padding: 80px 8%;
+}
+
+section h2 {
+font-size: 38px;
+color: #0b3d5c;
+margin-bottom: 15px;
+}
+
+.section-description {
+color: #555;
+margin-bottom: 35px;
+}
+
+/* =========================
+WYSZUKIWARKA
+========================= */
+
+.fish-search {
+margin-bottom: 35px;
+}
+
+.fish-search input {
+width: 100%;
+max-width: 500px;
+padding: 15px 20px;
+border: 2px solid #d5e4eb;
+border-radius: 10px;
+font-size: 16px;
+outline: none;
+}
+
+.fish-search input:focus {
+border-color: #1593c5;
+}
+
+/* =========================
+KARTY RYB
+========================= */
+
+.cards {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 25px;
+}
+
+.fish-card {
+display: block;
+background: white;
+border-radius: 18px;
+padding: 20px;
+text-decoration: none;
+color: #222;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.fish-card:hover {
+transform: translateY(-5px);
+}
+
+.fish-image {
+width: 100%;
+height: 180px;
+object-fit: cover;
+display: block;
+border-radius: 12px;
+margin-bottom: 15px;
+}
+
+.fish-card h3 {
+color: #0b3d5c;
+font-size: 22px;
+margin-bottom: 8px;
+}
+
+.fish-card p {
+color: #555;
+}
+
+/* =========================
+CIEMNE SEKCJE
+========================= */
+
+.dark-section {
+background: #0b3d5c;
+color: white;
+}
+
+.dark-section h2 {
+color: white;
+}
+
+.dark-section .section-description {
+color: #dbeaf2;
+}
+
+/* =========================
+PIERWSZA WĘDKA
+========================= */
+
+.steps {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+}
+
+.step {
+background: rgba(255, 255, 255, 0.1);
+padding: 30px;
+border-radius: 18px;
+}
+
+.step span {
+display: block;
+color: #8ed1fc;
+font-size: 35px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.step h3 {
+font-size: 22px;
+margin-bottom: 10px;
+}
+
+.step p {
+color: #dbeaf2;
+}
+
+/* =========================
+PRZYNĘTY
+========================= */
+
+.bait-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+}
+
+.bait-card {
+background: white;
+padding: 30px;
+border-radius: 18px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.bait-icon {
+font-size: 45px;
+margin-bottom: 15px;
+}
+
+.bait-card h3 {
+color: #0b3d5c;
+font-size: 23px;
+margin-bottom: 10px;
+}
+
+.bait-card p {
+color: #555;
+}
+
+/* =========================
+PORADNIKI
+========================= */
+
+.guide-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+
+.guide-card {
+background: rgba(255, 255, 255, 0.1);
+padding: 25px;
+border-radius: 18px;
+}
+
+.guide-card > span {
+display: block;
+font-size: 35px;
+margin-bottom: 10px;
+}
+
+.guide-card h3 {
+margin-bottom: 10px;
+}
+
+.guide-card p {
+color: #dbeaf2;
+}
+
+/* =========================
+CIEKAWOSTKA
+========================= */
+
+.fact-section {
+background: #e5f5fc;
+}
+
+.fact {
+max-width: 900px;
+margin: auto;
+display: flex;
+align-items: center;
+gap: 25px;
+}
+
+.fact > span {
+font-size: 55px;
+}
+
+.fact h2 {
+margin-bottom: 5px;
+}
+
+.fact p {
+color: #444;
+}
+
+/* =========================
+STOPKA
+========================= */
+
+footer {
+background: #062c43;
+color: white;
+text-align: center;
+padding: 45px 8%;
+}
+
+.footer-logo {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+footer p {
+color: #c9dce6;
+}
+
+.copyright {
+margin-top: 20px;
+font-size: 14px;
+}
+
+/* =========================
+STRONY RYB
+========================= */
+
+.fish-page {
+padding: 70px 8%;
+}
+
+.fish-hero {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 50px;
+align-items: center;
+}
+
+.fish-hero img {
+width: 100%;
+max-height: 500px;
+object-fit: cover;
+border-radius: 20px;
+}
+
+.fish-info h1 {
+font-size: 55px;
+color: #0b3d5c;
+margin-bottom: 20px;
+}
+
+.fish-info p {
+font-size: 18px;
+color: #555;
+}
+
+/* =========================
+KAFELKI INFORMACJI O RYBIE
+========================= */
+
+.fish-stats {
+display: grid !important;
+grid-template-columns: repeat(4, 1fr) !important;
+gap: 20px !important;
+margin-top: 35px !important;
+width: 100% !important;
+}
+
+.fish-stat {
+display: block !important;
+background: white !important;
+padding: 25px !important;
+border-radius: 15px !important;
+text-align: center !important;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+min-height: 150px !important;
+}
+
+.fish-stat span {
+display: block !important;
+font-size: 35px !important;
+margin-bottom: 5px !important;
+}
+
+.fish-stat h3 {
+margin: 10px 0 !important;
+font-size: 20px !important;
+color: #0b3d5c !important;
+}
+
+.fish-stat p {
+margin: 0 !important;
+}
+
+/* =========================
+PORADY NA STRONACH RYB
+========================= */
+
+.fish-tips {
+background: #0b3d5c;
+color: white;
+padding: 50px;
+border-radius: 20px;
+margin-top: 50px;
+}
+
+.fish-tips h2 {
+color: white;
+}
+
+.fish-tips-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+
+.fish-tip {
+background: rgba(255, 255, 255, 0.1);
+padding: 25px;
+border-radius: 15px;
+}
+
+.fish-tip h3 {
+margin-bottom: 10px;
+}
+
+.fish-tip p {
+color: #dbeaf2;
+}
+
+/* =========================
+PRZYCISK POWROTU
+========================= */
+
+.fish-back {
+display: inline-block;
+margin-top: 30px;
+background: #1593c5;
+color: white;
+padding: 13px 22px;
+border-radius: 10px;
+text-decoration: none;
+font-weight: bold;
+}
+
+.fish-back:hover {
+background: #0b3d5c;
+}
+
+/* =========================
+TELEFON / TABLET
+========================= */
+
+@media (max-width: 1100px) {
+.cards {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.guide-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fish-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
+}
+
+nav {
+    flex-direction: column;
+    gap: 15px;
+}
+
+}
+
+@media (max-width: 800px) }
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.steps {
+    grid-template-columns: 1fr;
+}
+
+.bait-grid {
+    grid-template-columns: 1fr;
+}
+
+.fish-hero {
+    grid-template-columns: 1fr;
+}
+
+.fish-info h1 {
+    font-size: 42px;
+}
+
+.fish-tips-grid {
+    grid-template-columns: 1fr;
+}
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 55px 5%;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .guide-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fish-stats {
+        grid-template-columns: 1fr !important;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .fish-page {
+        padding: 50px 5%;
+    }
+
+    .fish-tips {
+        padding: 25px;
+    }
+
+    .fact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
